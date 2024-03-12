@@ -1,0 +1,6 @@
+2023-12-19 12:09:55.724 +05:30 [INF] Updated user details: 5838973
+2023-12-19 12:09:56.937 +05:30 [INF] Api Response:{"email":"anusree@gmail.com","name":"anusree","gender":"female","status":"active","id":5838973}
+2023-12-19 12:09:56.941 +05:30 [INF] User Details Updated
+2023-12-19 12:09:56.941 +05:30 [INF] User name matches
+2023-12-19 12:09:56.941 +05:30 [INF] User email matches
+2023-12-19 12:09:56.941 +05:30 [INF] Update User Test Passed

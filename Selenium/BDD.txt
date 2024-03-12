@@ -1,0 +1,143 @@
+HOOKS:
+
+
+public static IWebDriver? driver;
+        public static ExtentReports extent;
+        static ExtentSparkReporter sparkReporter;
+        public static ExtentTest test;
+ 
+ 
+        [BeforeFeature]
+        public static void InitializeBrowser()
+        {
+            ReadConfigFile.ReadConfigSettings();
+            string currDir = Directory.GetParent(@"../../../").FullName;
+ 
+            extent = new ExtentReports();
+            sparkReporter = new ExtentSparkReporter(currDir + "/Reports/extent-report"
+                + DateTime.Now.ToString("yyyyMMdd_HHmmss") + ".html");
+            extent.AttachReporter(sparkReporter);
+ 
+ 
+            if (ReadConfigFile.properties["browser"].ToLower() == "chrome")
+            {
+                driver = new ChromeDriver();
+            }
+            else if (ReadConfigFile.properties["browser"].ToLower() == "edge")
+            {
+                driver = new EdgeDriver();
+            }
+ 
+            driver.Url = ReadConfigFile.properties["baseUrl"];
+            driver.Manage().Window.Maximize();
+        }
+        [BeforeScenario]
+        public static void CreateLogFile()
+        {
+            string? curDir = Directory.GetParent(@"../../../").FullName;
+            string? fileName = curDir + "/Logs/log_" +
+                DateTime.Now.ToString("ddMMyyyy-hhmmss") + ".txt";
+ 
+            Log.Logger = new LoggerConfiguration()
+            .WriteTo.Console()
+            .WriteTo.File(fileName, rollingInterval: RollingInterval.Day)
+            .CreateLogger();
+        }
+ 
+ 
+        /*[BeforeScenario]
+        public static void RefreshPage()
+        {
+            driver?.Navigate().Refresh();
+        }*/
+        [AfterScenario]
+        public static void NavigateBack()
+        {
+            driver.Navigate().GoToUrl(ReadConfigFile.properties["baseUrl"]);
+            Log.CloseAndFlush();
+        }
+        [AfterFeature]
+        public static void CloseBrowser()
+        {
+            driver?.Close();
+            extent.Flush();
+        }
+packages:
+<ItemGroup>
+<PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.0.0" />
+<PackageReference Include="Selenium.WebDriver" Version="4.15.0" />
+<PackageReference Include="SpecFlow.Plus.LivingDocPlugin" Version="3.9.57" />
+<PackageReference Include="SpecFlow.NUnit" Version="3.9.40" />
+<PackageReference Include="nunit" Version="3.13.2" />
+<PackageReference Include="NUnit3TestAdapter" Version="4.1.0" />
+<PackageReference Include="FluentAssertions" Version="6.2.0" />
+<PackageReference Include="Serilog" Version="3.1.1" />
+<PackageReference Include="Serilog.Sinks.Console" Version="5.0.0" />
+<PackageReference Include="Serilog.Sinks.File" Version="5.0.0" />
+</ItemGroup>
+
+
+corecodes:
+
+IWebDriver driver;
+        public void TakeScreenShot(IWebDriver driver)
+        {
+            ITakesScreenshot iss = (ITakesScreenshot)driver;
+            Screenshot ss = iss.GetScreenshot();
+ 
+            string currdir = Directory.GetParent(@"../../../").FullName;
+            string? filepath = currdir + "/Screenshots/ss_" +
+                DateTime.Now.ToString("yyyyMMdd_HHmmss") + ".png";
+ 
+            ss.SaveAsFile(filepath);
+ 
+        }
+ 
+        protected void LogTestResult(string testName, string result, string errorMessage = null)
+        {
+            Log.Information(result);
+ 
+            if (errorMessage == null)
+            {
+                Log.Information(testName + " Passed");
+            }
+            else
+            {
+                Log.Error($"Test failed for {testName}. \n Exception: \n {errorMessage}");
+ 
+            }
+        }
+ 
+        public static void ScrollIntoView(IWebDriver driver, IWebElement element)
+        {
+            IJavaScriptExecutor js = (IJavaScriptExecutor)driver;
+            js.ExecuteScript("arguments[0].scrollIntoView(true);", element);
+        }
+
+
+screenshot:
+
+var ss = ((ITakesScreenshot)driver).GetScreenshot().AsBase64EncodedString;
+                AllHooks.test.AddScreenCaptureFromBase64String(ss);
+
+
+
+ReadConfiguration:
+public static Dictionary<string, string>? properties;
+        public static void ReadConfigSettings()
+        {
+            string currentDirectory = Directory.GetParent(@"../../../").FullName;
+            properties = new Dictionary<string, string>();
+            string fileName = currentDirectory + "/Property/Config.properties";
+            string[] lines = File.ReadAllLines(fileName);
+            foreach (string line in lines)
+            {
+                if (!string.IsNullOrWhiteSpace(line) && line.Contains("="))
+                {
+                    string[] parts = line.Split('=');
+                    string key = parts[0].Trim();
+                    string value = parts[1].Trim();
+                    properties[key] = value;
+                }
+            }
+        }

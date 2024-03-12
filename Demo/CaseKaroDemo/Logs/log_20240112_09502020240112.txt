@@ -1,0 +1,2 @@
+2024-01-12 09:50:20.888 +05:30 [INF] Mobile Covers Clicked
+2024-01-12 09:50:24.561 +05:30 [INF] Test passed for clicking mobile cover

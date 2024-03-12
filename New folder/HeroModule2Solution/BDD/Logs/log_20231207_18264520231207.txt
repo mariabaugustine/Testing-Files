@@ -1,0 +1,5 @@
+2023-12-07 18:26:49.737 +05:30 [INF] User login to the system
+2023-12-07 18:26:50.347 +05:30 [INF] Login Test Success
+2023-12-07 18:26:50.347 +05:30 [INF] Login testpassed
+2023-12-07 18:26:51.001 +05:30 [INF] Test Success
+2023-12-07 18:26:51.002 +05:30 [INF] Add new contact testpassed

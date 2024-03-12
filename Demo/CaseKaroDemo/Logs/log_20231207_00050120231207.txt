@@ -1,0 +1,2 @@
+2023-12-07 00:05:01.589 +05:30 [INF] Mobile Covers Clicked
+2023-12-07 00:05:04.613 +05:30 [INF] Test passed for clicking mobile cover

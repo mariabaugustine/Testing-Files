@@ -1,0 +1,2 @@
+2023-12-22 14:57:13.568 +05:30 [INF] User Click on registration button
+2023-12-22 14:57:13.782 +05:30 [INF] user successfully click on registration link

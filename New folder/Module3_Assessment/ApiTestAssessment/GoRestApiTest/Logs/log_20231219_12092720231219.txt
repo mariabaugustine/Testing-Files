@@ -1,0 +1,18 @@
+2023-12-19 12:09:27.211 +05:30 [INF] Get all user test
+2023-12-19 12:09:28.223 +05:30 [INF] API Response: [{"id":5838994,"name":"Deeptimayee Pillai","email":"deeptimayee_pillai@schmeler.test","gender":"female","status":"active"},{"id":5838989,"name":"Digambara Marar","email":"digambara_marar@hand-ward.test","gender":"male","status":"active"},{"id":5838978,"name":"Chinmayananda Mishra","email":"mishra_chinmayananda@hilpert-nader.test","gender":"male","status":"active"},{"id":5838977,"name":"Adhrit Prajapat","email":"adhrit_prajapat@white-hamill.test","gender":"male","status":"inactive"},{"id":5838976,"name":"Nanda Banerjee DDS","email":"banerjee_nanda_dds@keebler.example","gender":"male","status":"active"},{"id":5838975,"name":"Anuja Dutta","email":"dutta_anuja@jaskolski.test","gender":"female","status":"inactive"},{"id":5838974,"name":"Alok Asan","email":"asan_alok@schulist.test","gender":"female","status":"active"},{"id":5838973,"name":"Dr. Bhadran Joshi","email":"bhadran_joshi_dr@berge.test","gender":"male","status":"inactive"},{"id":5838972,"name":"Amaresh Bhattacharya","email":"amaresh_bhattacharya@huels.test","gender":"male","status":"active"},{"id":5838971,"name":"Rati Tandon LLD","email":"lld_tandon_rati@parker.example","gender":"female","status":"inactive"}]
+2023-12-19 12:09:28.226 +05:30 [INF] Api Response:[{"id":5838994,"name":"Deeptimayee Pillai","email":"deeptimayee_pillai@schmeler.test","gender":"female","status":"active"},{"id":5838989,"name":"Digambara Marar","email":"digambara_marar@hand-ward.test","gender":"male","status":"active"},{"id":5838978,"name":"Chinmayananda Mishra","email":"mishra_chinmayananda@hilpert-nader.test","gender":"male","status":"active"},{"id":5838977,"name":"Adhrit Prajapat","email":"adhrit_prajapat@white-hamill.test","gender":"male","status":"inactive"},{"id":5838976,"name":"Nanda Banerjee DDS","email":"banerjee_nanda_dds@keebler.example","gender":"male","status":"active"},{"id":5838975,"name":"Anuja Dutta","email":"dutta_anuja@jaskolski.test","gender":"female","status":"inactive"},{"id":5838974,"name":"Alok Asan","email":"asan_alok@schulist.test","gender":"female","status":"active"},{"id":5838973,"name":"Dr. Bhadran Joshi","email":"bhadran_joshi_dr@berge.test","gender":"male","status":"inactive"},{"id":5838972,"name":"Amaresh Bhattacharya","email":"amaresh_bhattacharya@huels.test","gender":"male","status":"active"},{"id":5838971,"name":"Rati Tandon LLD","email":"lld_tandon_rati@parker.example","gender":"female","status":"inactive"}]
+2023-12-19 12:09:28.226 +05:30 [INF] All user details returned
+2023-12-19 12:09:28.229 +05:30 [INF] Get All User test passed
+2023-12-19 12:09:28.232 +05:30 [INF] Create User Test
+2023-12-19 12:09:28.754 +05:30 [INF] API Response: {"id":5839581,"name":"Lizza","email":"Lizza@gmail.com","gender":"female","status":"active"}
+2023-12-19 12:09:28.755 +05:30 [INF] User created and details returned
+2023-12-19 12:09:28.755 +05:30 [INF] User Name matches 
+2023-12-19 12:09:28.755 +05:30 [INF] User Email matches
+2023-12-19 12:09:28.755 +05:30 [INF] User Gender matches
+2023-12-19 12:09:28.755 +05:30 [INF] User Status matches
+2023-12-19 12:09:28.755 +05:30 [INF] Create User test passed
+2023-12-19 12:09:28.756 +05:30 [INF] Get single user test
+2023-12-19 12:09:29.163 +05:30 [INF] API Response: {"id":5838978,"name":"Chinmayananda Mishra","email":"mishra_chinmayananda@hilpert-nader.test","gender":"male","status":"active"}
+2023-12-19 12:09:29.163 +05:30 [INF] Api Response:{"id":5838978,"name":"Chinmayananda Mishra","email":"mishra_chinmayananda@hilpert-nader.test","gender":"male","status":"active"}
+2023-12-19 12:09:29.163 +05:30 [INF] All user details returned
+2023-12-19 12:09:29.163 +05:30 [INF] Get single User test passed

@@ -1,0 +1,6 @@
+2024-01-12 09:52:35.675 +05:30 [INF] Create Account Test Started
+2024-01-12 09:52:38.068 +05:30 [INF] Clicked on Register Button
+2024-01-12 09:52:38.801 +05:30 [INF] Register page loaded successfully
+2024-01-12 09:52:38.801 +05:30 [INF] Filling Registration form started
+2024-01-12 09:52:40.954 +05:30 [INF] Form Filled Successfully
+2024-01-12 09:52:43.811 +05:30 [INF] User Registered Successfully

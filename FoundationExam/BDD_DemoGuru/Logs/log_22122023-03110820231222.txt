@@ -1,0 +1,14 @@
+2023-12-22 15:11:10.518 +05:30 [INF] User Click on registration button
+2023-12-22 15:11:10.718 +05:30 [INF] user successfully click on registration link
+2023-12-22 15:11:10.985 +05:30 [INF] User Type First name
+2023-12-22 15:11:11.032 +05:30 [INF] User Type Last name
+2023-12-22 15:11:11.093 +05:30 [INF] User Type Phonenumber
+2023-12-22 15:11:11.153 +05:30 [INF] User Type Email
+2023-12-22 15:11:11.204 +05:30 [INF] User type address
+2023-12-22 15:11:11.259 +05:30 [INF] User type city
+2023-12-22 15:11:11.300 +05:30 [INF] User type state
+2023-12-22 15:11:11.348 +05:30 [INF] User type postalcode
+2023-12-22 15:11:11.386 +05:30 [INF] User type username
+2023-12-22 15:11:11.434 +05:30 [INF] User type password
+2023-12-22 15:11:11.483 +05:30 [INF] User type confirmpassword
+2023-12-22 15:11:13.592 +05:30 [INF] User clicked submit buuton

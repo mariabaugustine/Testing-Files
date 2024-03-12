@@ -1,0 +1,21 @@
+{
+  "id": "fd978a1d-9200-4fd5-a572-a98b50a05f48",
+  "version": "2.0",
+  "name": "GoogleImageTesting",
+  "url": "",
+  "tests": [{
+    "id": "0b94257e-3db2-4992-a23e-ecefa0b72211",
+    "name": "Untitled",
+    "commands": []
+  }],
+  "suites": [{
+    "id": "78d48905-09c4-4dea-a94d-fac7c66f6239",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["0b94257e-3db2-4992-a23e-ecefa0b72211"]
+  }],
+  "urls": [],
+  "plugins": []
+}

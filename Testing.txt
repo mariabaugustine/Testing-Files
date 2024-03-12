@@ -1,0 +1,8 @@
+Selenium->Unit Testing->Web pages
+Disadvantages of Selenium-Selenium wait,only support functional testing
+Playwright-Works in headless mode,Support multiple language,support functional testing,api testing
+end-to-end testing tool.
+-For creating instances dont write await
+-play wright is auto waiting and retry ability
+
+
